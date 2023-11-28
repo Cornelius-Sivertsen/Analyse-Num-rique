@@ -39,7 +39,7 @@ fl(x)=\pm m\cdot b^e
 $$
 
 - b: base (b=2 en général)
-- m: mantisse avec $1\leq m<b$ avec p chiffres maximum en base b
+- m: mantisse avec $1\le m < b $, avec p chiffres maximum en base b
 - e: exposant avec $e_{min}\le e\le e_{max}$
 - p: un entier positif fixé par l’architecture que l’on utilise
 
