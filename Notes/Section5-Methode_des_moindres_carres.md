@@ -91,17 +91,17 @@ $$
 
 $$
 \begin{pmatrix}
-m&\sum^m_{i=1}x_i\\
-\sum^m_{i=1}x_i&\sum^m_{i=1}x_i^2
+m&\sum\limits^m_{i=1}x_i\\
+\sum\limits^m_{i=1}x_i&\sum^m_{i=1}x_i^2
 \end{pmatrix}
 \cdot \begin{pmatrix}
 a_0\\
 a_1
 \end{pmatrix}
 =\begin{pmatrix}
-\sum^m_{i=1}y_i\\
-\sum^m_{i=1}x_iy_i\
-end{pmatrix}
+\sum\limits^m_{i=1}y_i\\
+\sum\limits^m_{i=1}x_iy_i
+\end{pmatrix}
 $$ 
 
 - Paramètres = coefficients de la droite: $(a_0,a_1)$
@@ -110,7 +110,7 @@ $$
 -> Une solution aux M.C. minimise la distance euclidienne entre $d\in\mathbb R^m$ et $Im(A)$ (qui est un sous-espace vectoriel de $\mathbb R^m$.<br/>
 
 **Autrement formulé:**<br/>
-$x^\*$ est t.q. $Ax^\*$ projeté $\perp$ de $d\in\mathbb R^m$ sur $Im(A)$
+$`x^*`$ est t.q. $`Ax^*`$ projeté $\perp$ de $d\in\mathbb R^m$ sur $Im(A)$
 
 **Lemme**<br/>
 $||Ax-d||_ {2,m}$ minimal ssi $(Ax-d)\perp Im(A)$
