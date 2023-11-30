@@ -41,10 +41,8 @@ $$
 \implies I\approx\tilde{I}=\frac{b-a}{n}\sum\limits^n_{k=1}f(x_{k-1})
 $$
 
-<aside>
 💡 On aura donc un valeur approximé qui est < que la valeur vraie
 
-</aside>
 
 **Cas de rectangles à droite:**
 
@@ -56,10 +54,8 @@ $$
 I\approx\tilde{I}=\frac{b-a}{n}\sum\limits_{k=1}^nf(x_k)
 $$
 
-<aside>
 💡 Ici, on aura un valeur approximé > que la valeur vraie
 
-</aside>
 
 ## Méthode des trapèzes
 
@@ -117,10 +113,8 @@ $$
 I\approx\tilde{I}=\frac{b-a} n\sum\limits^n_{k=1}\frac{1}{6}(f(x_{k-1})+4f(\frac{x_k+x_{k-1}}{2})+f(x_k))
 $$
 
-<aside>
 💡 On note que le calcul de $\tilde{I}$ necesite ici le calcul de $2(n+1)$ points. Par contre les rectangles necesite $n$ points et les trapèzes $n+1$ points.
 
-</aside>
 
 ## Ordre des méthodes
 
@@ -149,7 +143,5 @@ Ordre des méthodes vues:
 - Trapèzes *et du point milieu* ordre 2
 - Simpson: ordre 4
 
-<aside>
 💡 De manière générale: des que l'on augmente en ordre de précision, on augmente aussi en coût de calcul, donc en temps de calcul.
 
-</aside>
