@@ -10,10 +10,10 @@ Le principe se divise en etapes:
 
 1. On subdivise $[a,b]$ en n sous-intervalles $[x_{k-1},x_k],\space k=1,\dots,n$
     1. Remarque: On a donc n+1 points
-2. On écrit $I$ sous la forme $\int_a^bf(x)dx=\sum_{k=1}^n(\int_{x_{k-1}}^{x_k}f(x)dx)=\sum_{k=1}^nI_k$
+2. On écrit $I$ sous la forme $\int_a^bf(x)dx=\sum\limits_{k=1}^n(\int_{x_{k-1}}^{x_k}f(x)dx)=\sum\limits_{k=1}^nI_k$
 3. On approche $f(x)$ par $f_k(x)$ sur chaque sous-intervalle $[x_{k-1},x_k]$
 4. on calcule $\tilde{I_k}=\int_{x_{k-1}}^{x_k}f_k(x)dx$ qui approxime $I_k = \int_{x_{k-1}}^{x_k}f(x)dx$
-5. On obtient une valeur approchée $\tilde{I}$ de $I$ par la somme $\tilde{I}=\sum_{k=1}^n\tilde{I_k}$
+5. On obtient une valeur approchée $\tilde{I}$ de $I$ par la somme $\tilde{I}=\sum\limits_{k=1}^n\tilde{I_k}$
 
 # Les différentes méthodes d’approximation de f(x)
 
@@ -32,13 +32,13 @@ On a donc:
 $$
 \tilde{I_k}=\int_{x_{k-1}}^{x_k}f_k(x)dx=(x_k-x_{k-1})*f(x_{k-1})
 \newline
-\implies I\approx\tilde{I}=\sum^n_{k=1}(x_k-x_{k-1})*f(x_{k-1})
+\implies I\approx\tilde{I}=\sum\limits^n_{k=1}(x_k-x_{k-1})*f(x_{k-1})
 $$
 
 On utilise normalement un subdivision *uniforme* de $[a,b]$:  $x_k=a+k\frac{b-a}{n}$
 
 $$
-\implies I\approx\tilde{I}=\frac{b-a}{n}\sum^n_{k=1}f(x_{k-1})
+\implies I\approx\tilde{I}=\frac{b-a}{n}\sum\limits^n_{k=1}f(x_{k-1})
 $$
 
 <aside>
@@ -53,7 +53,7 @@ On change $x_{k-1}$ par $x_k$
 Avec un subdivision uniforme on a donc:
 
 $$
-I\approx\tilde{I}=\frac{b-a}{n}\sum_{k=1}^nf(x_k)
+I\approx\tilde{I}=\frac{b-a}{n}\sum\limits_{k=1}^nf(x_k)
 $$
 
 <aside>
@@ -73,13 +73,13 @@ On a donc:
 $$
 \tilde{I_k}=\int_{x_{k-1}}^{x_k}f_k(x)dx=(x_k-x_{k-1})(\frac{f(x_{k-1})+f(x_k)}{2})
 \newline
-\implies I\approx\tilde{I}=\sum^n_{k=1}(x_k-x_{k-1})(\frac{f(x_{k-1})+f(x_k)}{2})
+\implies I\approx\tilde{I}=\sum\limits^n_{k=1}(x_k-x_{k-1})(\frac{f(x_{k-1})+f(x_k)}{2})
 $$
 
 Avec un subdivision uniforme de $[a,b]$ on a donc:
 
 $$
-I\approx\tilde{I}=\frac{b-a}{n}\sum^n_{k=1}\frac{f(x_{k-1})+f(x_k)}{2}
+I\approx\tilde{I}=\frac{b-a}{n}\sum\limits^n_{k=1}\frac{f(x_{k-1})+f(x_k)}{2}
 $$
 
 ## Autres méthodes:
@@ -94,13 +94,13 @@ On a donc:
 $$
 f_k(x)=f(\frac{x_{k-1}+x_k}{2})\space, \space\forall x\in[x_{k-1},x_k]
 \newline
-\implies I\approx\tilde{I}=\sum^n_{k=1}(x_k-x_{k-1})f(\frac{x_{k-1}+x_k}{2})
+\implies I\approx\tilde{I}=\sum\limits^n_{k=1}(x_k-x_{k-1})f(\frac{x_{k-1}+x_k}{2})
 $$
 
 Avec subdivision uniforme:
 
 $$
-I\approx\tilde{I}=\frac{b-a} n\sum^n_{k=1}(f(\frac{x_{k-1}+x_k}{2})
+I\approx\tilde{I}=\frac{b-a} n\sum\limits^n_{k=1}(f(\frac{x_{k-1}+x_k}{2})
 $$
 
 ### ********************Méthode de Simpson:********************
@@ -108,13 +108,13 @@ $$
 On approche f par le polynôme de degré 2 coïncidant avec f à gauche, à droite et au milieu de chaque intervalle:
 
 $$
-I\approx\tilde{I}=\sum^n_{k=1}\frac{x_k-x_{k-1}}{6}(f(x_{k-1})+4f(\frac{x_k+x_{k-1}}{2})+f(x_k))
+I\approx\tilde{I}=\sum\limits^n_{k=1}\frac{x_k-x_{k-1}}{6}(f(x_{k-1})+4f(\frac{x_k+x_{k-1}}{2})+f(x_k))
 $$
 
 Avec subdivision uniforme:
 
 $$
-I\approx\tilde{I}=\frac{b-a} n\sum^n_{k=1}\frac{1}{6}(f(x_{k-1})+4f(\frac{x_k+x_{k-1}}{2})+f(x_k))
+I\approx\tilde{I}=\frac{b-a} n\sum\limits^n_{k=1}\frac{1}{6}(f(x_{k-1})+4f(\frac{x_k+x_{k-1}}{2})+f(x_k))
 $$
 
 <aside>
