@@ -38,7 +38,7 @@ Bon choix de norme: $||.||_ 2$ car associée à un produit scalaire.
 Le problème devient: **Trouver $x^ * \in \mathbb R^n$ tel que:**
 
 $$
-j(x^ * )=\min_{x\in\mathbb R^n} j(x) \;\mathrm{avec}\; j(x)=||Ax-d||^2_{2,m}
+j(x^ * )=\min_{x\in\mathbb R^n} j(x) \space\mathrm{avec}\space j(x)=||Ax-d||^2_{2,m}
 $$
 
 Problème d'optimisation (dans l'espace entier $\mathbb R^n$).
