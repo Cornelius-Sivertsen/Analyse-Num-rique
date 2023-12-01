@@ -38,7 +38,7 @@ Bon choix de norme: $||.||_ 2$ car associée à un produit scalaire.
 Le problème devient: **Trouver $x^ * \in \mathbb R^n$ tel que:**
 
 $$
-j(x^ * )=\min_{x\in\mathbb R^n} j(x) \space\mathrm{avec}\space j(x)=||Ax-d||^2_{2,m}
+j(x^ * )=\min_{x\in\mathbb R^n} j(x) \ \textrm{avec}\  j(x)=||Ax-d||^2_{2,m}
 $$
 
 Problème d'optimisation (dans l'espace entier $\mathbb R^n$).
@@ -64,7 +64,7 @@ puis C.S. de minimum (local): $D^2j(x)=H_j(x)$ est positive définie.
 
 **Lemme:**<br/>
 Le gradient de j s'écrit: $\nabla j(x)=A^TAx-A^Td$ (vecteur de $\mathbb R^n$)<br/>
-Sa _matrice Hessienne_ (carrée $n\times n$) s'écrit: $H_j (x)=A^TA,\space\forall x$.
+Sa _matrice Hessienne_ (carrée $n\times n$) s'écrit: $H_j (x)=A^TA,\ \forall x$.
 
 **Théorème centrale:**<br/>
 Toute solution du problème de M.C. au cas sur-détermine ($n< m$) est également solution du système linéaire $n\times n$: 
