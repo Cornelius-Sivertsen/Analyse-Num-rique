@@ -29,7 +29,7 @@ A rectangulaire $m\times n$; $d\in\mathbb R^m$ vecteur d'observations; $x\in \ma
 
 - Cas $n>m$: système sous-détermine, infinité de solutions.
 
-- Cas $n< m$: Système sur-déterminé: cas qui nous intéresse. A-priori le systeme n'admet pas de solution (au sens usuel...)
+- Cas $n< m$: Système sur-déterminé: cas qui nous intéresse. A-priori le système n'admet pas de solution (au sens usuel...)
 
 ### Solution au sens des moindres carrés:
 On cherche une solution qui représente _au mieux_ les observations, i.e. _minimisant la norme_ $||Ax-d||$.
@@ -92,7 +92,7 @@ $$
 $$
 \begin{pmatrix}
 m&\sum\limits^m_{i=1}x_i\\
-\sum\limits^m_{i=1}x_i&\sum^m_{i=1}x_i^2
+\sum\limits^m_{i=1}x_i&\sum\limits^m_{i=1}x_i^2
 \end{pmatrix}
 \cdot \begin{pmatrix}
 a_0\\
