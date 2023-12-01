@@ -110,7 +110,7 @@ $$
 -> Une solution aux M.C. minimise la distance euclidienne entre $d\in\mathbb R^m$ et $Im(A)$ (qui est un sous-espace vectoriel de $\mathbb R^m$.<br/>
 
 **Autrement formulé:**<br/>
-$`x^*`$ est t.q. $`Ax^*`$ projeté $\perp$ de $d\in\mathbb R^m$ sur $Im(A)$
+$x^\ast$ est t.q. $Ax^\ast$ projeté $\perp$ de $d\in\mathbb R^m$ sur $Im(A)$
 
 **Lemme**<br/>
 $||Ax-d||_ {2,m}$ minimal ssi $(Ax-d)\perp Im(A)$
