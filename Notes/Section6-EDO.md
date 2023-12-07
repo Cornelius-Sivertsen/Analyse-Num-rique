@@ -74,7 +74,7 @@ Chaque méthode de résolution numérique de $(P)$ (au moins celle que l'on verr
 Elle repose sur la méthode des rectangles à gauche pour approcher $\int^{t_ {n+1}} _{t_ {n}}f(t,y(t))dt$:
 
 $$
-\int^{t_ {n+1}} _{t_ {n}}f(t,y(t))dt\approx \frac{t_ {n+1}-t_ {n}}{1} f(t_ {n},y(t_ {n}))\approx hf(t_ {n},y(t_ {n}))
+\int^{t_ {n+1}}_ {t_ {n}}f(t,y(t))dt\approx \frac{t_ {n+1}-t_ {n}}{1} f(t_ {n},y(t_ {n}))\approx hf(t_ {n},y(t_ {n}))
 $$
 
 (On a appliqué la méthode des rectangles avec "1 seule subdivision" de l'intervalle). On construit donc la solution discrète *approchée* $(y_ {n})_ {0\leq n\leq N}$. Avec la relation de récurrence:
@@ -90,7 +90,7 @@ On calcule donc dans l'ordre une approximation de $y(t_ {1}=h)$ puis $y(t_ {2}=2
 On va utiliser la méthode des rectangles à droite:
 
 $$
-\int^{t_ {n+1}} _{t_ {n}}f(t,y(t))dt\approx \frac{t_ {n+1}-t_ {n}}{1} f(t_ {n+1},y(t_ {n+1}))\approx hf(t_ {n+1},y(t_ {n+1}))
+\int^{t_ {n+1}}_ {t_ {n}}f(t,y(t))dt\approx \frac{t_ {n+1}-t_ {n}}{1} f(t_ {n+1},y(t_ {n+1}))\approx hf(t_ {n+1},y(t_ {n+1}))
 $$
 
 Schéma d'Euler implicite:
@@ -116,16 +116,16 @@ On utilise la méthode des trapèzes pour approcher l'intégrale:
 
 $$
 \begin{aligned}
-\int^{t_ {n+1}} _{t_ {n}}f(t,y(t))dt & \approx h\left[\frac{f(t_ {n},y(t_ {n}))+f(t_ {n+1},y(t_ {n+1}))}{2}\right]
+\int^{t_ {n+1}} _ {t_ {n}}f(t,y(t))dt & \approx h\left[\frac{f(t_ {n},y(t_ {n}))+f(t_ {n+1},y(t_ {n+1}))}{2} \right]
 \\
-& \approx \frac{h}{2} \left[f(t_ {n},y(t_ {n}))+f(t_ {n+1},y(t_ {n+1}))\right]
+& \approx \frac{h}{2} \left[ f(t_ {n},y(t_ {n}))+f(t_ {n+1},y(t_ {n+1})) \right]
 \end{aligned}
 $$
 
 Méthode de Crank-Nicholson:
 
 $$
-y_ {n+1}=y_ {n}+\frac{h}{2} \left[f(t_ {n},y(t_ {n}))+f(t_ {n+1},y(t_ {n+1}))\right]
+y_ {n+1}=y_ {n}+\frac{h}{2} \left\[f(t_ {n},y(t_ {n}))+f(t_ {n+1},y(t_ {n+1}))\right\]
 $$
 
 A chaque itération, on doit résoudre l'équation:
@@ -249,7 +249,7 @@ $$
 
 -> Suite géométrique de raison $r=\frac{1}{1+ah}$. Où $a$ et $h$ sont tous $>0$, $\implies 1+ah>1$.
 
-Donc $o<r<1$  
+Donc $0 < r < 1$  
 D'où $||(y_ {n})||_ {\infty}=y_ {0}$ et donc la méthode sera *toujours stable*! C'est un résultat général, la méthode d'Euler implicite est **inconditionnellement stable**.
 
 **À retenir:** Les méthodes explicites sont toutes stables sous condition de type $h<\ \textrm{seuil}\ $ et les méthodes implicites sont toutes inconditionnellement stables.
@@ -271,7 +271,7 @@ $$
 Y(t)=
 \begin{pmatrix}
 y_ {1}(t)\\
-\vline\\
+\vdots\\
 y_ {p}(t)
 \end{pmatrix}
 \in\mathbb R^p
