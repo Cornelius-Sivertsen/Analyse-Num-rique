@@ -4,7 +4,7 @@
 
 **Analyse Numérique:** concevoir et comprendre la résolution numérique de problèmes mathématiques issus du monde réel
 
-*****Erreur = différence entre solution exacte et résultat numérique*****
+**Erreur = différence entre solution exacte et résultat numérique**
 
 Sources d’erreur:
 
@@ -32,7 +32,7 @@ Rappel: Dans la vie normale on utilise la _“base décimale”_ pour représent
 **Notion importante:** Représentation machine = *approximation* (mémoire finie).
 
 
-Le représentation machine que l'on utilise c’est la ***virgule flottante normalisée:***
+Le représentation machine que l'on utilise c’est la **virgule flottante normalisée:**
 
 $$
 fl(x)=\pm m\cdot b^e
