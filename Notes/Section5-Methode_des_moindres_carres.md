@@ -114,3 +114,4 @@ $x^\ast$ est t.q. $Ax^\ast$ projeté $\perp$ de $d\in\mathbb R^m$ sur $Im(A)$
 
 **Lemme**<br/>
 $||Ax-d||_ {2,m}$ minimal ssi $(Ax-d)\perp Im(A)$
+
