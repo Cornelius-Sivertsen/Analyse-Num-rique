@@ -51,7 +51,7 @@ x_1+3x_2+x_3+3x_4=4
 \end{cases}
 $$
 
-→ $L_i - L_1$ pour $i=\  2,3,4$
+- $L_i - L_1$ pour $i=\  2,3,4$
 
 On a donc:
 
