@@ -75,29 +75,30 @@ $$
 
 # Interprétation matricielle de la méthode d’elimination de Gauss
 
-Soit $\mathcal{L}_{ij}(\lambda)\in\mathcal{M}_n(\mathbb{R})$, un matrice de transvection, définie par:
+Soit $\mathcal{L}_ {ij}(\lambda)\in\mathcal{M}_ n(\mathbb{R})$, un matrice de transvection, définie par:
 
 $$
-\mathcal{L}_{ij}(\lambda) = I_{\mathbb{R}^n}+\lambda E_{ij}
+\mathcal{L}_ {ij}(\lambda) = I_ {\mathbb{R}^n}+\lambda E_ {ij}
 $$
 
-Avec $(E_{ij})_{kl}=\delta_{ik}\delta_{jl}$
+Avec $(E_{ij})_ {kl}=\delta_ {ik}\delta_ {jl}$
 
 $E_{ij}$ est donc un matrice avec un seul coef non nul, à la ligne i et colonne j, qui est egal à 1.
 
-**Propriété:** Si $i>j$, alors $\mathcal{L}_{ij}(\lambda)$ est triangulaire inférieure, inversible et $\mathcal{L}_{ij}(\lambda)^{-1}=\mathcal{L}_{ij}(-\lambda)$
+**Propriété:** Si $i>j$, alors $\mathcal{L}_ {ij}(\lambda)$ est triangulaire inférieure, inversible et $\mathcal{L}_ {ij}(\lambda)^{-1}=\mathcal{L}_{ij}(-\lambda)$
 
-**Opérations lignes:**Soit $A\in\mathcal{M}_n(\mathbb{R})$, la matrice: $\tilde{A}=\mathcal{L}_{ij}(\lambda)A$, est la matrice résultant de l’opération $L_i \rightarrow L_i+\lambda L_j$ 
+**Opérations lignes:** Soit $A\in\mathcal{M}_ n (\mathbb{R})$, la matrice: $\tilde{A}=\mathcal{L}_ {ij}(\lambda)A$, est la matrice résultant de l’opération $L_ i \rightarrow L_ i+\lambda L_ j$ 
 
 Exemple: Elimination de Gauss vu matriciellement sur l’exemple 1:
 
 $$
-A=\begin{pmatrix}
+A=
+\begin{pmatrix}
 2&1&1\\
 6&2&1\\
 -2&2&1\\
 \end{pmatrix}
-\rightarrow \mathcal{L}_{32}(3)\mathcal{L}_{31}(1)\mathcal{L}_{21}(-3)A=
+\rightarrow \mathcal{L}_ {32}(3)\mathcal{L}_ {31}(1)\mathcal{L}_ {21}(-3)A=
 \begin{pmatrix}
 2&1&1\\
 0&-1&-2\\
@@ -107,7 +108,7 @@ A=\begin{pmatrix}
 $$
 
 $$
-\mathrm{Posons:}\  L=(\mathcal{L}_{32}(3)\mathcal{L}_{31}(1)\mathcal{L}_{21}(-3))^{-1}=\mathcal{L}_{21}(3)\mathcal{L}_{32}(-1)\mathcal{L}_{32}(-3)
+\mathrm{Posons:}\  L=(\mathcal{L}_ {32}(3)\mathcal{L}_ {31}(1)\mathcal{L}_ {21}(-3))^{-1}=\mathcal{L}_ {21}(3)\mathcal{L}_ {32}(-1)\mathcal{L}_ {32}(-3)
 $$
 
 La matrice $A$ admet la **factorisation** $A=LU$
@@ -116,7 +117,7 @@ Résoudre $Ax=b$ revient à résoudre $Ly=b$ et $Ux=y$
 
 Théorème:
 
-Soit $A=(a_{ij})_{1\leq i,j\leq n}\in\mathcal{M}_n(\mathbb{R})$ Si pour tout $k=1,\dots,n$, la sous matrice $A_k=(a_{ij})_{1\leq i,j\leq k} \in \mathcal{M}_k(R)$ est inversible (c.a.d. $det(A_k)\neq 0$ alors la matrice $A$ admet une factorisation $A=LU$ où la matrice $L$ est triangulaire inférieure, et la matrice U est diagonale supérieure. De plus, si L contient que des 1 sur la diagonale, la décomposition est unique.
+Soit $A=(a_ {ij})_ {1\leq i,j\leq n}\in\mathcal{M}_ n(\mathbb{R})$ Si pour tout $k=1,\dots,n$, la sous matrice $A_ k=(a_ {ij})_ {1\leq i,j\leq k} \in \mathcal{M}_ k(R)$ est inversible (c.a.d. $det(A_ k)\neq 0$ alors la matrice $A$ admet une factorisation $A=LU$ où la matrice $L$ est triangulaire inférieure, et la matrice U est diagonale supérieure. De plus, si L contient que des 1 sur la diagonale, la décomposition est unique.
 
 **Attention:** cette factorisation correspond à l’algorithme de Gauss SANS permutations.
 
