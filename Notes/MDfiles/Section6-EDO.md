@@ -310,13 +310,13 @@ $$
 Euler explicite:
 
 $$
-Y_ {n+1}=Y_ {n}+F(t_ {n},Y_ {n})
+Y_ {n+1}=Y_ {n}+h F(t_ {n},Y_ {n})
 $$
 
 Euler implicite:
 
 $$
-Y_ {n+1}=Y_ {n}+F(t_ {n+1},Y_ {n+1})
+Y_ {n+1}=Y_ {n}+h F(t_ {n+1},Y_ {n+1})
 $$
 
 **Exemple:**
